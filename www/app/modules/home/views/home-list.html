@@ -1,0 +1,11 @@
+<ion-view view-title="Inicio">
+  <ion-content>
+    <div class="list card">
+      <a ng-repeat="item in menuList" class="item item-icon-left item-icon-right" href="{{item.href}}">
+        <i class="icon" ng-class="item.ico"></i>
+            {{item.title}}
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

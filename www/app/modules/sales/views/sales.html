@@ -1,0 +1,17 @@
+<ion-view view-title="Ventas">
+  <ion-content>
+    <ion-list>
+
+      <a ng-repeat="item in salesList" class="item item-icon-left item-icon-right" href="#/home/detail/{{$index}}">
+        <i class="icon ion-ios-cart-outline"></i>
+        {{item.date | date:'dd/MM/yyyy - h:mma'}}
+         <span class="item-note">
+          $ {{item.total}}
+        </span>
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>

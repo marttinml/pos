@@ -1,0 +1,15 @@
+<ion-view view-title="Detalle de venta ${{sale.total}}">
+  <ion-content>
+    
+	<ul class="list">
+      <li class="item item-icon-right" ng-repeat="item in sale.detail track by $index">
+          $ {{item.price}}
+          <span class="item-note">
+            {{item.product}}
+          </span>
+        </li>
+
+
+    </ul>
+  </ion-content>
+</ion-view>

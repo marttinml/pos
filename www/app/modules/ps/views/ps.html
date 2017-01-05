@@ -1,0 +1,39 @@
+<ion-view view-title="Punto de venta">
+  <ion-content>
+    
+    <div class="list">
+      <div class="item item-input-inset">
+        <label class="item item-input-wrapper">
+          <input type="number" placeholder="$" ng-model="data.price">
+        </label>
+        
+          <button class="button icon button-large ion-ios-plus" ng-click="add(data)" ng-class="{'button-balanced':data.price}"></button>
+          <button class="button icon button-large ion-ios-barcode button-calm" ng-click="barcode(data)"></button>
+      </div>
+    </div>
+    
+    <div class="padding">
+      <button class="button button-block button button-stable icon-left ion-ios-cart" ng-class="{'button-balanced':sale.detail.length}"ng-click="sell()"> Vender </button>
+    </div>
+
+    <ul class="list" ng-show="sale.detail.length">
+      <li class="item">
+          TOTAL: 
+          <span class="badge badge-assertive">$ {{sale.total}}</span>
+        </li>
+        <li class="item item-divider">Detalle de productos</li>
+        <li class="item item-icon-right" ng-repeat="item in sale.detail track by $index">
+          $ {{item.price}}
+          <span class="item-note">
+            {{item.product}}
+          </span>
+          <i class="icon ion-ios-close-empty" ng-click="delete($index)"></i>
+        </li>
+        
+    </ul>
+
+
+    
+
+  </ion-content>
+</ion-view>
