@@ -6,34 +6,28 @@
     	$scope.sale = $pos.sale;
     	$scope.almacen = [
     		{
-    			code:'5449000000996',
-    			product:'Coca Cola - Lata 355ml',
+    			code:'7501000153800',
+    			product:'Pingüinos Marinaela',
     			description:'',
-    			price:9
+    			price:13.50
     		},
     		{
-    			code:'7506129430849',
-    			product:'Libreta 100 Hojas',
+    			code:'7501000626502',
+    			product:'gallegatas Emperador',
     			description:'',
-    			price:15
+    			price:14
     		},
     		{
-    			code:'8410199001290',
-    			product:'Papas sabritas',
+    			code:'648292000423',
+    			product:'Galletanuez',
     			description:'',
-    			price:7.5
+    			price:12.50
     		},
     		{
-    			code:'758104000159',
-    			product:'Bonafont Agua 1.5L',
+    			code:'7501000153107',
+    			product:'Gansito Marinela',
     			description:'',
-    			price:12
-    		},
-    		{
-    			code:'200362892798',
-    			product:'Lamparita Pinza Desm',
-    			description:'',
-    			price:159
+    			price:10
     		}
     	];
 
